@@ -13,7 +13,7 @@ RUN wget https://nginx.org/download/nginx-1.14.2.tar.gz && \
     --with-http_stub_status_module && make -j 4 && make install && \
     rm -rf /usr/local/nginx/html/* && \
     echo "ok" >> /usr/local/nginx/html/status.html && \
-    cd / && rm -rf nginx-1.12.2* && \
+    cd / && rm -rf nginx-1.14.2* && \
     mkdir /wwwroot && \
     mkdir /usr/local/nginx/conf/vhosts
     # ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
