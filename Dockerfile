@@ -21,6 +21,7 @@ RUN wget https://nginx.org/download/nginx-1.14.2.tar.gz && \
 ENV PATH $PATH:/usr/local/nginx/sbin
 COPY nginx.conf /usr/local/nginx/conf/nginx.conf
 COPY vhosts-example.conf /usr/local/nginx/conf/vhosts/
+COPY nginx /etc/logrotate.d/
 WORKDIR /usr/local/nginx
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
