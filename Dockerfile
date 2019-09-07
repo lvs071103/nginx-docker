@@ -1,5 +1,5 @@
 FROM centos:7
-MAINTAINER www.ctnrs.com
+MAINTAINER furong.zhou@daocloud.io
 RUN yum install -y gcc gcc-c++ make \
     openssl-devel pcre-devel gd-devel \
     iproute net-tools telnet wget curl && \
