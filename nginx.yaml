@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: <BRANCH_NAME>
-        image: <HARBOR_ADDR>/<BRANCH_NAME>:<TAG>
+        image: <DC3_PROD_HARBOR_ADDR>/<BRANCH_NAME>:<TAG>
         ports:
         - containerPort: 80
 ---
