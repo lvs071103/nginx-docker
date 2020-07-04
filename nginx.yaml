@@ -18,6 +18,8 @@ spec:
         image: harbor.dominos.com/dc3-prod/<BRANCH_NAME>:<TAG>
         ports:
         - containerPort: 80
+      imagePullSecrets:
+      - name: dc3-registry-secret
 ---
 apiVersion: v1
 kind: Service
