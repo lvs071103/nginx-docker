@@ -22,7 +22,7 @@ spec:
             memory: 500Mi
           requests:
             cpu: 500m
-            memory: 1Gi
+            memory: 250M
         ports:
         - containerPort: 80
       imagePullSecrets:
