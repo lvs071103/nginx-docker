@@ -7,7 +7,7 @@ spec:
   selector:
     matchLabels:
       app: <BRANCH_NAME>
-  replicas: 4
+  replicas: 1
   template:
     metadata:
       labels:
@@ -16,6 +16,13 @@ spec:
       containers:
       - name: <BRANCH_NAME>
         image: harbor.dominos.com/dc3-prod/<BRANCH_NAME>:<TAG>
+        resources:
+          limits:
+            cpu: 1000m
+            memory: 500Mi
+          requests:
+            cpu: 500m
+            memory: 1Gi
         ports:
         - containerPort: 80
       imagePullSecrets:
