@@ -7,7 +7,7 @@ spec:
   selector:
     matchLabels:
       app: <BRANCH_NAME>
-  replicas: 2
+  replicas: <REPLICAS>
   template:
     metadata:
       labels:
