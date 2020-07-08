@@ -3,6 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: <BRANCH_NAME>
+  namespace: <NAMESPACE>
 spec:
   selector:
     matchLabels:
@@ -34,6 +35,7 @@ metadata:
   name: <BRANCH_NAME>
   labels:
     run: <BRANCH_NAME>
+  namespace: <NAMESPACE>
 spec:
   ports:
   - port: 80
